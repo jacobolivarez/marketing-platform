@@ -17,16 +17,20 @@
               <div class="text-h6 text-primary q-mb-md">Contact Information</div>
               <div class="q-mb-md">
                 <q-icon name="location_on" size="sm" class="q-mr-sm text-primary" />
-                <span>Lubbock, TX and surrounding areas</span>
+                <span>{{ concept_painting.address }}</span>
               </div>
               <div class="q-mb-md">
                 <q-icon name="phone" size="sm" class="q-mr-sm text-primary" />
-                <a href="tel:5555555555" class="text-grey-8"> (555) 555-5555 </a>
+                <a
+                  :href="`tel:${concept_painting.phone.replace(/\D+/g, '')}`"
+                  class="text-grey-8"
+                  >{{ concept_painting.phone }}</a
+                >
               </div>
               <div class="q-mb-md">
                 <q-icon name="email" size="sm" class="q-mr-sm text-primary" />
-                <a href="mailto:info@conceptpainting.com" class="text-grey-8">
-                  info@conceptpainting.com
+                <a :href="`mailto:${concept_painting.email}`" class="text-grey-8">
+                  {{ concept_painting.email }}
                 </a>
               </div>
               <div>
@@ -55,6 +59,7 @@
 </template>
 
 <script setup>
+import { concept_painting } from 'src/helpers/branding'
 import AppContactForm from 'src/components/AppContactForm.vue'
 </script>
 

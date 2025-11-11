@@ -54,6 +54,7 @@
 
 <script setup>
 import { reactive } from 'vue'
+import { concept_painting } from 'src/helpers/branding'
 // import { scroll } from 'quasar';
 import { useRouter } from 'vue-router'
 
@@ -107,12 +108,12 @@ defineProps({
       },
       {
         title: 'Facebook',
-        to: 'https://www.facebook.com',
+        to: concept_painting.facebook,
         icon: 'fab fa-facebook',
       },
       {
         title: 'Yelp',
-        to: 'https://www.yelp.com',
+        to: concept_painting.yelp,
         icon: 'fab fa-yelp',
       },
     ],

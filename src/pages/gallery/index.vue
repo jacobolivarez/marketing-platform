@@ -2,7 +2,7 @@
   <q-page class="gallery-page bg-grey-1">
     <section class="q-pa-md q-pa-lg-xl">
       <div class="text-center q-mb-xl">
-        <h2 class="text-h4 text-primary text-weight-bold q-mb-sm">📸 Our Craftsmanship Gallery</h2>
+        <h2 class="text-h4 text-primary text-weight-bold q-mb-sm">Photo Gallery</h2>
         <p class="text-subtitle1 text-grey-7">
           A glimpse of the quality and care we bring to every project. Click on any image to expand
           it!

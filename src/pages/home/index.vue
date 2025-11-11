@@ -14,7 +14,7 @@
             to="/contact"
             size="lg"
           />
-          <h1 class="text-h3 text-weight-bold">(806) 555-5555</h1>
+          <h1 class="text-h3 text-weight-bold">{{ concept_painting.phone }}</h1>
         </div>
       </q-img>
     </section>
@@ -112,6 +112,7 @@
 </template>
 
 <script setup>
+import { concept_painting } from 'src/helpers/branding'
 import AppButton from 'src/components/AppButton'
 
 const features = [

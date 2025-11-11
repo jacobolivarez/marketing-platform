@@ -13,7 +13,6 @@
             <q-img
               :src="service.image"
               :alt="service.title"
-              ratio="16/9"
               spinner-color="primary"
               class="q-mb-md"
             />
@@ -31,9 +30,9 @@
         <p class="text-subtitle1 q-mb-md">
           Contact us today to schedule your free estimate and experience the quality difference.
         </p>
-        <q-btn
-          color="white"
-          text-color="primary"
+        <AppButton
+          color="primary"
+          text-color="white"
           label="Request a Quote"
           to="/contact"
           size="lg"
@@ -45,6 +44,8 @@
 </template>
 
 <script setup>
+import AppButton from 'src/components/AppButton.vue'
+
 const services = [
   {
     title: 'Residential Painting',
@@ -96,7 +97,7 @@ const services = [
   inset: 0;
 }
 .section {
-  height: calc(100vh - 110px);
+  min-height: calc(100vh - 110px);
   position: relative;
 }
 </style>

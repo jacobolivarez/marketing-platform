@@ -1,10 +1,12 @@
-export default {
-  concept_painting: {
-    name: 'Concept Painting',
-    address: '',
-    phone: '',
-    facebook: '',
-    instagram: '',
-    yelp: '',
-  },
+export const concept_painting = {
+  name: 'Concept Painting',
+  description: 'Painting and speciality services.',
+  address: '3007 Duke St, Lubbock, TX',
+  phone: '(806) 500-3768',
+  email: 'example@email.com',
+  facebook: 'https://www.facebook.com/profile.php?id=61576262002865',
+  instagram: '',
+  yelp: 'https://www.yelp.com/biz/concept-painting-lubbock?uid=TrSYWI16a6zojhC1W1V1yw&utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=%28direct%29',
 }
+
+export default { concept_painting }
