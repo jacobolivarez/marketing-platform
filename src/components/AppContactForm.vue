@@ -10,7 +10,7 @@
         <AppInput v-model="state.name" label="Name" />
         <AppInput v-model="state.email" label="Email" />
         <AppInput v-model="state.phone" label="Phone" />
-        <AppInput v-model="state.message" label="Message" />
+        <AppInput v-model="state.message" label="Message" type="textarea" />
         <div class="text-center">
           <AppButton type="submit" label="Submit" color="primary" />
         </div>

@@ -4,7 +4,11 @@
       <div class="col-auto">
         <slot name="logo">
           <div>
-            <q-img src="" style="height: 100px; width: 170px" fit="contain" />
+            <q-img
+              src="~assets/logos/concept-painting-logo.png"
+              style="height: 100px; width: 170px"
+              fit="contain"
+            />
           </div>
         </slot>
       </div>

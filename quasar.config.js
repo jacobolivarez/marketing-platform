@@ -2,6 +2,7 @@
 // https://v2.quasar.dev/quasar-cli-webpack/quasar-config-file
 
 import { defineConfig } from '#q-app/wrappers'
+import { config } from 'dotenv'
 
 export default defineConfig((ctx) => {
   return {
@@ -69,6 +70,9 @@ export default defineConfig((ctx) => {
       // https://v2.quasar.dev/quasar-cli-webpack/handling-webpack
       // "chain" is a webpack-chain object https://github.com/sorrycc/webpack-chain
       // chainWebpack (/* chain, { isClient, isServer } */) {}
+      env: {
+        branding: 'concept_painting',
+      },
     },
 
     // Full list of options: https://v2.quasar.dev/quasar-cli-webpack/quasar-config-file#devserver

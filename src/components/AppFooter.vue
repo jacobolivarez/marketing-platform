@@ -3,11 +3,15 @@
     <div class="row q-col-gutter-md justify-between items-start">
       <!-- Left: Company Info -->
       <div class="col-12 col-md-4">
-        <div class="text-h6 q-mb-sm">Company Name Here</div>
+        <div class="text-h6 q-mb-sm">Company Name</div>
         <p class="text-grey-5 q-mb-md">Description of company or other text here.</p>
         <div class="row q-gutter-sm">
           <div>
-            <q-img src="" style="height: 100px; width: 170px" fit="contain" />
+            <q-img
+              src="~assets/logos/concept-painting-logo.png"
+              style="height: 100px; width: 170px"
+              fit="contain"
+            />
           </div>
         </div>
       </div>
@@ -39,7 +43,9 @@
   </q-footer>
 </template>
 
-<script setup></script>
+<script setup>
+// const { COMPANY_NAME } = process.env
+</script>
 
 <style scoped>
 /* .q-footer {
