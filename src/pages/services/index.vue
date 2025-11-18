@@ -49,31 +49,31 @@ import AppButton from 'src/components/AppButton.vue'
 const services = [
   {
     title: 'Residential Painting',
-    image: 'https://picsum.photos/800/600?random=11',
+    image: require('src/assets/images/residential_exterior_2.jpg'),
     description:
       'Transform your home with our expert interior and exterior residential painting services. We focus on clean lines, durable finishes, and customer satisfaction.',
   },
   {
     title: 'Commercial Painting',
-    image: 'https://picsum.photos/800/600?random=12',
+    image: require('src/assets/images/commercial_exterior_2.jpg'),
     description:
       'Professional painting for offices, retail spaces, and large facilities. Our team minimizes downtime and delivers lasting, professional results.',
   },
   {
-    title: 'Pressure Washing',
-    image: 'https://picsum.photos/800/600?random=13',
+    title: 'Wood Staining',
+    image: require('src/assets/images/wood_staining.jpg'),
     description:
       'Restore the appearance of your home or business with our power washing services. Perfect for siding, driveways, sidewalks, and more.',
   },
   {
     title: 'Venetian Plaster',
-    image: 'https://picsum.photos/800/600?random=14',
+    image: require('src/assets/images/venetian_plaster_2.jpg'),
     description:
       'Add elegance and texture to your walls with Venetian plaster finishes. Our artisans create rich, polished surfaces that elevate any space.',
   },
   {
     title: 'Concrete & Epoxy Flooring',
-    image: 'https://picsum.photos/800/600?random=15',
+    image: require('src/assets/images/concrete_staining.jpg'),
     description:
       'Durable, beautiful flooring options for residential garages and commercial spaces. Our epoxy coatings protect and enhance your concrete surfaces.',
   },

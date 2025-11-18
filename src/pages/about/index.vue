@@ -4,7 +4,7 @@
       <div class="row items-center q-col-gutter-lg">
         <div class="col-12 col-md-6">
           <q-img
-            src="https://picsum.photos/800/600?random=2"
+            src="~assets/images/who_we_are.jpg"
             alt="Professional painter"
             class="rounded-borders shadow-2"
           />
@@ -12,14 +12,22 @@
         <div class="col-12 col-md-6">
           <h2 class="text-h5 text-primary text-weight-bold q-mb-sm">Who We Are</h2>
           <p class="text-body1 text-grey-8 q-mb-md">
-            We’re a locally owned and operated painting company proudly serving the West Texas area.
-            With years of experience in both residential and commercial painting, our team delivers
-            high-quality finishes, reliable service, and attention to detail that stands out.
+            We’re a family-owned painting company based in Lubbock, proudly serving West Texas and
+            the surrounding areas since 1981. With decades of experience in both residential and
+            commercial projects, our team is committed to delivering craftsmanship that lasts,
+            service you can rely on, and results that truly elevate your space.
           </p>
           <p class="text-body1 text-grey-8">
-            Whether you're refreshing your home or enhancing your business space, we use only
-            premium paints and professional techniques to ensure lasting results. Your satisfaction
-            is our top priority.
+            From detailed prep work to high-quality finishes, we approach every job with care,
+            precision, and professionalism. Whether you’re updating your home, upgrading your
+            business, or looking for specialty services like Venetian plaster, wood staining, epoxy
+            flooring, or pressure washing, we bring the same dedication to excellence to every
+            project.
+          </p>
+          <p class="text-body1 text-grey-8">
+            At Concept Painting and Specialties, your satisfaction isn’t just a goal — it’s the
+            standard we work by every day. We go the extra mile to ensure you get exactly what
+            you’re looking for.
           </p>
         </div>
       </div>
@@ -29,20 +37,22 @@
         <div class="col-12 col-md-6">
           <h2 class="text-h5 text-primary text-weight-bold q-mb-sm">Our Mission</h2>
           <p class="text-body1 text-grey-8 q-mb-md">
-            Our mission is to bring beauty, protection, and value to every project we complete. We
-            believe in honest communication, clean workspaces, and craftsmanship that speaks for
-            itself. From prep to finish, we go above and beyond to deliver results that make our
-            customers proud of their property.
+            Our mission is to enhance every space we touch with quality, integrity, and
+            craftsmanship. We are committed to delivering work that not only looks exceptional but
+            also adds lasting value and protection to your property. Through clear communication,
+            meticulous preparation, and professional techniques, we ensure every project is
+            completed with care and precision.
           </p>
           <p class="text-body1 text-grey-8">
-            Whether you're refreshing your home or enhancing your business space, we use only
-            premium paints and professional techniques to ensure lasting results. Your satisfaction
-            is our top priority.
+            As a family-owned business, we believe in treating our customers with honesty and
+            respect. Whether we're revitalizing a home or improving a commercial space, our goal is
+            simple: to exceed expectations and provide results you can be proud of. Your
+            satisfaction drives everything we do.
           </p>
         </div>
         <div class="col-12 col-md-6">
           <q-img
-            src="https://picsum.photos/800/600?random=2"
+            src="~assets/images/our_mission.jpg"
             alt="Professional painter"
             class="rounded-borders shadow-2"
           />
@@ -127,7 +137,7 @@ const highlights = [
   inset: 0;
 }
 .section {
-  height: calc(100vh - 110px);
+  min-height: calc(100vh - 110px);
   position: relative;
 }
 .section-image {

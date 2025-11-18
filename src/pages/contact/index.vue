@@ -68,7 +68,7 @@ a {
   text-decoration: none;
 }
 .section {
-  height: calc(100vh - 110px);
+  min-height: calc(100vh - 110px);
   position: relative;
 }
 </style>
