@@ -18,7 +18,7 @@
         </div>
       </q-img>
     </section>
-    <section id="about_us" class="section text-center q-pa-sm">
+    <section id="about_us" class="section text-center q-pa-lg">
       <div class="row q-col-gutter-md">
         <div class="col-xs-12 col-sm-4">
           <q-img
@@ -87,7 +87,13 @@
       <div class="row q-col-gutter-lg q-pa-lg">
         <div v-for="(project, index) in projects" :key="index" class="col-12 col-sm-6 col-md-4">
           <q-card flat bordered class="q-hoverable">
-            <q-img :src="project.image" :alt="project.caption" spinner-color="primary" />
+            <q-img
+              :src="project.image"
+              :alt="project.caption"
+              spinner-color="primary"
+              fit="cover"
+              height="340px"
+            />
             <q-card-section>
               <div class="text-subtitle1 text-weight-medium">{{ project.caption }}</div>
               <!-- <div class="text-grey-7 text-body2">{{ project.description }}</div> -->

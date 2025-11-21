@@ -1,5 +1,5 @@
 <template>
-  <q-page class="q-pa-md q-mt-lg">
+  <q-page class="q-pa-md">
     <section class="section text-center">
       <div>
         <h1 class="text-h4 text-weight-bold text-primary q-mb-sm">Get in Touch</h1>
@@ -10,8 +10,12 @@
       </div>
       <!-- Contact Info + Form -->
       <div class="row justify-center q-col-gutter-xl q-mb-xl">
+        <!-- Contact Form -->
+        <div class="col-12 col-md-6 order-sm-1 order-md-2">
+          <AppContactForm />
+        </div>
         <!-- Contact Info -->
-        <div class="col-12 col-md-5">
+        <div class="col-12 col-md-5 order-sm-2 order-md-1">
           <q-card class="q-pa-lg">
             <q-card-section>
               <div class="text-h6 text-primary q-mb-md">Contact Information</div>
@@ -48,10 +52,6 @@
               />
             </q-card-section>
           </q-card>
-        </div>
-        <!-- Contact Form -->
-        <div class="col-12 col-md-6">
-          <AppContactForm />
         </div>
       </div>
     </section>

@@ -16,7 +16,8 @@
         >
           <q-img
             :src="photo"
-            :ratio="4 / 3"
+            fit="fill"
+            height="340px"
             spinner-color="primary"
             class="full-width cursor-pointer shadow-3 rounded-borders hover-scale"
             @click="openImage(index)"

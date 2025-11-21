@@ -89,11 +89,6 @@ const props = defineProps({
         label: 'Services',
         route: '/services',
       },
-      // {
-      //   name: 'venetian-plaster',
-      //   label: 'Venetian Plaster',
-      //   route: '/venetian-plaster',
-      // },
       {
         name: 'gallery',
         label: 'Gallery',
@@ -109,11 +104,11 @@ const props = defineProps({
   icons: {
     type: Array,
     default: () => [
-      {
-        title: 'Instagram',
-        to: 'https://www.instagram.com',
-        icon: 'fab fa-instagram',
-      },
+      // {
+      //   title: 'Instagram',
+      //   to: 'https://www.instagram.com',
+      //   icon: 'fab fa-instagram',
+      // },
       {
         title: 'Facebook',
         to: concept_painting.facebook,
@@ -150,12 +145,4 @@ function goTo(route) {
 function onDrawer() {
   state.drawerOpen = !state.drawerOpen
 }
-
-// function scrollToElement(tab) {
-//   const el = document.getElementById(tab.name)
-//   const target = getScrollTarget(el)
-//   const offset = el.offsetTop - 100
-//   const duration = 800
-//   setVerticalScrollPosition(target, offset, duration)
-// }
 </script>

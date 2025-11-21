@@ -2,7 +2,6 @@
 // https://v2.quasar.dev/quasar-cli-webpack/quasar-config-file
 
 import { defineConfig } from '#q-app/wrappers'
-import { config } from 'dotenv'
 
 export default defineConfig((ctx) => {
   return {
@@ -98,7 +97,7 @@ export default defineConfig((ctx) => {
       // directives: [],
 
       // Quasar plugins
-      plugins: [],
+      plugins: ['Notify'],
     },
 
     // animations: 'all', // --- includes all animations

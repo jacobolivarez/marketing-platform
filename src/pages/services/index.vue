@@ -15,6 +15,8 @@
               :alt="service.title"
               spinner-color="primary"
               class="q-mb-md"
+              fit="fill"
+              height="360px"
             />
             <div class="text-subtitle1 text-weight-bold text-primary q-mb-xs">
               {{ service.title }}
