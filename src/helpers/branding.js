@@ -1,5 +1,5 @@
 export const concept_painting = {
-  name: 'Concept Painting',
+  name: 'Concept Painting and Specialties',
   description: 'Painting and speciality services.',
   address: '3007 Duke St, Lubbock, TX',
   phone: '(806) 500-3768',

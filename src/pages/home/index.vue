@@ -188,7 +188,7 @@ const projects = [
   },
   {
     image: require('src/assets/images/epoxy_flooring.jpg'),
-    caption: 'Expoxy Flooring',
+    caption: 'Epoxy Flooring',
     description: 'Refreshed exterior signage and trim for improved curb appeal.',
   },
   {
