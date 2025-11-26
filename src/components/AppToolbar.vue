@@ -4,7 +4,7 @@
       <div>
         <q-img
           src="~assets/logos/concept-painting-logo.png"
-          style="height: 100px; width: 170px"
+          style="height: 90px; width: 150px"
           fit="contain"
         />
       </div>
@@ -26,7 +26,7 @@
     </q-toolbar-title>
     <slot name="social-links">
       <div v-if="$q.screen.gt.xs">
-        <q-btn
+        <AppButton
           v-for="icon in icons"
           flat
           round
@@ -35,7 +35,7 @@
           :key="icon.title"
           @click="openLink(icon.to)"
         />
-        <q-btn
+        <AppButton
           class="q-ml-sm"
           label="Call Now"
           color="white"
@@ -45,7 +45,17 @@
         />
       </div>
       <div v-if="$q.screen.lt.sm" class="col text-right">
-        <q-btn flat round dense icon="menu" @click="onDrawer" />
+        <AppButton color="white" flat round icon="phone" dense @click="callNow" />
+        <AppButton
+          v-for="icon in icons"
+          flat
+          round
+          color="white"
+          :icon="icon.icon"
+          :key="icon.title"
+          @click="openLink(icon.to)"
+        />
+        <AppButton flat round dense icon="menu" @click="onDrawer" />
         <q-drawer side="right" v-model="state.drawerOpen" bordered class="bg-grey-8">
           <q-list bordered separator class="text-left">
             <q-item v-for="tab in mobileTabs" :key="tab.name" clickable v-ripple :to="tab.route">
@@ -62,10 +72,8 @@
 import { computed, reactive } from 'vue'
 import { useQuasar } from 'quasar'
 import { concept_painting } from 'src/helpers/branding'
-// import { scroll } from 'quasar';
 import { useRouter } from 'vue-router'
-
-// const { getScrollTarget, setVerticalScrollPosition } = scroll
+import AppButton from 'src/components/AppButton.vue'
 
 const router = useRouter()
 const $q = useQuasar()
@@ -106,7 +114,7 @@ const props = defineProps({
     default: () => [
       // {
       //   title: 'Instagram',
-      //   to: 'https://www.instagram.com',
+      //   to: concept_painting.instagram,
       //   icon: 'fab fa-instagram',
       // },
       {
