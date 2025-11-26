@@ -139,7 +139,7 @@ const state = reactive({
 const mobileTabs = computed(() => [...props.tabs])
 
 function callNow() {
-  window.open('tel:5555555555', '_blank')
+  window.open(`tel:${concept_painting.phone.replace(/\D+/g, '')}`, '_blank')
 }
 
 function openLink(url) {
